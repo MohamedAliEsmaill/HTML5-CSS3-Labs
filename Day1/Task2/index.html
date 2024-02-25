@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Change the Color Ranges</h1>
+      <div class="color-range-wrapper">
+        <label for="red">Red</label>
+        <input type="range" id="red" min="0" max="255" value="128" />
+        <span id="red-value">128</span>
+      </div>
+      <div class="color-range-wrapper">
+        <label for="green">Green</label>
+        <input type="range" id="green" min="0" max="255" value="128" />
+        <span id="green-value">128</span>
+      </div>
+      <div class="color-range-wrapper">
+        <label for="blue">Blue</label>
+        <input type="range" id="blue" min="0" max="255" value="128" />
+        <span id="blue-value">128</span>
+      </div>
+      <div class="color-preview"></div>
+      <div>
+        <h2 class="color-test">
+          Change the 3 Color Ranges and observe my color change
+        </h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
