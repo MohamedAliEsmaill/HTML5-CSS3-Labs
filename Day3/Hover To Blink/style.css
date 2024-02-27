@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.animatedHover {
+  border: 1px solid blueviolet;
+  padding: 30px;
+  cursor: pointer;
+  background-color: pink;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.animatedHover:hover {
+  animation-name: hoverDiv;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hoverDiv {
+  0% {
+    background-color: peachpuff;
+    box-shadow: 1px 1px 1px orange;
+  }
+  25% {
+    background-color: purple;
+    box-shadow: 2px 2px 2px #38cd13;
+  }
+  50% {
+    background-color: brown;
+    box-shadow: 3px 3px 3px burlywood;
+  }
+  75% {
+    background-color: black;
+    box-shadow: 4px 4px 4px black;
+  }
+  100% {
+    background-color: skyblue;
+    box-shadow: 4px 4px 4px silver;
+  }
+}
